@@ -1,3 +1,3 @@
 game.init = function(){
-	console.log("Hello World !")
+	console.log("SCRIPT: Hello World !");
 }

@@ -10,5 +10,6 @@
 
 var script = document.createElement('script');
 script.id = 'HeartOfGalaxy-Script';
-script.src = 'https://github.com/Harrygiel/HeartOfGalaxyScript/tree/dev/REQUIRE.js';
+script.src = 'https://github.com/Harrygiel/HeartOfGalaxyScript/tree/dev/js/init/REQUIRE.js';
+console.log("SCRIPT: Script added");
 document.head.appendChild(script);
