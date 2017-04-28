@@ -1,0 +1,11 @@
+﻿#### Hearth Of Galaxy Script ####
+
+
+---- V0.0.1 ----
+
+* Project created:
+	Changelog created
+	License created
+	Readme created
+	Script Loader created
+	Hello World created
