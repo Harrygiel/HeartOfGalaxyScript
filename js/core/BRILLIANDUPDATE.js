@@ -1,4 +1,25 @@
 script.UpdateAutoRoute = function(){
+
+    var hub = planetsName.santorini;
+        
+    var planetsTransportRes = Array(planets.length);
+    var cp, i, b;
+    
+    for(cp = 0; cp < game.planets.length; cp++) {
+        var p = game.planets[cp];
+        var planet = planets[p];
+        var planetProd = Array(resNum).fill(0);
+        for(b = 0; b < buildings.length; b++) {
+            var building = buildings[b];
+            var planetBuilding = planet.structure[b];
+            if(!planetBuilding.number || !planetBuilding.active)
+                continue;
+            var prod = building.rawProduction(planet);
+            planetProd.addSet(prod.map(function(v) { return v * planetBuilding.number; }));
+        }
+        planetsTransportRes[p] = planetProd.map(function(v, k) { return v * -1; });
+    }
+
     fleetSchedule.civisFleet(game.id).filter(function(route) {
         return route.type == "auto" && (route.origin == hub || route.destination == hub);
     }).map(function(route) {
