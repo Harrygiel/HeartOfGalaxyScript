@@ -1,4 +1,4 @@
-﻿load.loading = function() // Liste des images à charger
+﻿load.loading = function()
 {
 	var liste = new Array();
 

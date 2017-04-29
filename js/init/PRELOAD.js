@@ -32,7 +32,7 @@ load.preload = function(liste)
 						{
 							console.log("[SCRIPT] image loaded !");
 							liste = 0;
-							game.init(); 
+							script.init(); 
 						}
 					}
 				}
@@ -43,6 +43,6 @@ load.preload = function(liste)
 	if ( load.nbImage == 0) { 
 		console.log("[SCRIPT] no image to load");
 		liste = 0;
-		game.init();
+		script.init();
 	} 
 }
