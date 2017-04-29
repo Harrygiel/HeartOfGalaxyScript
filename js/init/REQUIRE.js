@@ -1,7 +1,6 @@
 ﻿var start = function()
 {
 	console.log("[SCRIPT] Script loaded !");
-
 	load.loading(); 
 }
 
@@ -39,7 +38,7 @@ function callScript(dossier, scripts, index, callback)
 initScript( "js/", [
 		"init/PRELOAD",
 		"init/LOADING",		
-		"init/INIT",			
+		"init/INIT",	
 	], 
 	start
 );

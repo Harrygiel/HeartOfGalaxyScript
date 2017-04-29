@@ -1,5 +1,12 @@
-﻿#### Hearth Of Galaxy Script ####
+﻿#### Hearth Of Script ####
 
+
+---- V0.0.2 ----
+
+* Project renamed "Hearth Of Script" from "Hearth Of Galaxy Script"
+* Update AutoRoad button added
+* Brilliand script added
+* Button/Brilland script linked
 
 ---- V0.0.1 ----
 
