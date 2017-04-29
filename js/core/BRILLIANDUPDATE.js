@@ -1,7 +1,7 @@
 script.UpdateAutoRoute = function(){
-
+    
     var hub = planetsName.santorini;
-        
+
     var planetsTransportRes = Array(planets.length);
     var cp, i, b;
     

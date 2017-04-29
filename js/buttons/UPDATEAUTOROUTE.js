@@ -6,10 +6,10 @@ updateAutoRouteButton.init = function(){
 
     $("#autobuildhub_icon").click(function() {
         console.log("Updating...");
-        //script.UpdateAutoRoute();
+        script.UpdateAutoRoute();
         console.log("Updated !");
     });
-/*
+
     $("#autobuildhub_icon").hover(function() {
         (new m(120,
             20, "<span class='blue_text' style='width:100%;text-align:center'>Automaticaly correct<br>HUB routes</span>", "info")).drawInfo();
@@ -27,7 +27,7 @@ updateAutoRouteButton.init = function(){
         })
     }, function() {
         currentPopup.drop()
-    });*/
+    });
     $("#autobuildhub_icon").mouseout(function() {
         $(document).on("mousemove", function() {})
     });

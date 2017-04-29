@@ -7,6 +7,9 @@ script.init = function(){
 	console.dir(routes);
 	console.dir(fleetSchedule);
 	*/
-
+	console.log(document.title);
+	hub = planetsName.santorini;
+    planetsTransportRes = Array(planets.length);
+	
 	updateAutoRouteButton.init();
 }

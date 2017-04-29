@@ -5,10 +5,10 @@
 // @description  Automate HearthOfGalaxy things
 // @author       Harrygiel
 // @include      *
-// @exclude		 *.*
+// @require      http://www.kongregate.com/games/Cheslava/heart-of-galaxy
 // @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/dev/js/init/INIT.js
-// @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/dev/js/lib/BRILLIANDLIB.js
 // @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/dev/js/core/BRILLIANDUPDATE.js
+// @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/dev/js/buttons/UPDATEAUTOROUTE.js
 // @resource	 updateAutoRouteIcon https://rawgit.com/Harrygiel/HeartOfGalaxyScript/dev/img/updatehub.png
 // @grant        GM_getResourceURL
 // ==/UserScript==
