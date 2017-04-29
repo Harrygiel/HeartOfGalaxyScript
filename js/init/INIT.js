@@ -1,6 +1,7 @@
 var script = new Object();
 script.init = function(){
-	console.dir(game.ships);
-	console.dir(game.planets);
-	console.dir(FleetSchedule);
+	console.log(game.id);
+	console.dir(planets);
+	console.dir(routes);
+	console.dir(fleetSchedule);
 }
