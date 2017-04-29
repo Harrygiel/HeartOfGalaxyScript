@@ -1,15 +1,18 @@
 // ==UserScript==
-// @name         HeartOfScript-Harrygiel
-// @namespace    https://github.com/Harrygiel/HeartOfGalaxyScript
+// @name         [DEV]HeartOfGalaxy-Script-Harrygiel
+// @namespace    https://github.com/Harrygiel/HeartOfGalaxyScript/tree/dev
 // @version      0.1
 // @description  Automate HearthOfGalaxy things
-// @author       Harrygiel, Brilliand
-// @include      *kongregate.com/games/Cheslava/heart-of-galaxy
+// @author       Harrygiel
+// @include      *
+// @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/dev/js/init/PRELOAD.js
+// @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/dev/js/init/LOADING.js
+// @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/dev/js/init/INIT.js
 // @grant        none
 // ==/UserScript==
 
-var script = document.createElement('script');
-script.id = 'HeartOfScript';
-script.src = 'https://github.com/Harrygiel/HeartOfGalaxyScript/tree/dev/js/init/REQUIRE.js';
-console.log("SCRIPT: Script added");
-document.head.appendChild(script);
+setTimeout(function(){ if(typeof game !== 'undefined' && typeof game.planets !== 'undefined'){
+                          console.log("[SCRIPT] Script loaded !");
+                          load.loading();
+                          }
+                     }, 5000);
