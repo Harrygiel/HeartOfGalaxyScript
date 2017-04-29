@@ -35,6 +35,7 @@ function callScript(dossier, scripts, index, callback)
 	document.body.appendChild(script); 
 }
 
+
 initScript( "js/", [
 		"init/PRELOAD",
 		"init/LOADING",		
