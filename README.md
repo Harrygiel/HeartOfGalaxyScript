@@ -7,7 +7,6 @@ A script is not something to take lightly. Some of them can easly integrate a ke
 ### HeartOfGalaxyScript warning
 
 This tool is completely fan-ade, based on the version 30 of Hearth of Galaxy. Be aware that if something goes wrong, it CAN corrupt your savefile, so do not forget to do backup regulary.
-Because of the cross script scripting protection and the kongregate script protection, the script need to run in every iframe on the page, without a precise URL. That mean that to avoid a (really light) CPU usage, you should deactivate the script after the button creation, to avoid him to run elswhere.
 
 ## Getting Started
 
@@ -18,6 +17,8 @@ Hearth Of Galaxy is entirely created by Cheslava, and hosted on [Kongregate](htt
 This userscript is created for tampermonkey and SHOULD BE compatible with greasemonkey, but no question about this compatibility will be answered.
 Tampermonkey can be installed directly with the add on store of your browser.
 [Chrome Tampermonkey add on](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=fr)
+
+Finaly, in the tampermonkey parameter: Externals > Update Interval: Always: you don't want to update only 1/10 of the script, trust me I tried.
 
 ### Installing the script
 
@@ -73,6 +74,11 @@ A: 2 solutions: Clone the git, create a branch, add your feature, do a CLEAN pul
 Q: I can add a feature, but I don't have any idea !
 ```
 A: Great ! Just ask around, I'm pretty sure some people have great idea. Why not adding automaticaly ship if the fleet don't have the cargo capacity first ? why not automaticaly create a fleet and autoroute them ?
+
+```
+Q: After an update, the script is not working anymore !
+```
+A: First, in the tampermonkey parameter: Externals > Update Interval: ALways: you don't want to update only 1/10 of the script, trust me.
 
 
 ## Authors
