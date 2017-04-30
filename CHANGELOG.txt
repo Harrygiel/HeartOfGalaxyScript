@@ -1,6 +1,10 @@
 ﻿#### Hearth Of Script ####
 
 
+---- V0.0.3 ----
+
+* Cleaned project
+
 ---- V0.0.2 ----
 
 * Project renamed "Hearth Of Script" from "Hearth Of Galaxy Script"
