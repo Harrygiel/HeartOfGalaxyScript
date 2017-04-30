@@ -4,7 +4,7 @@
 // @version      0.0.3
 // @description  Automate HearthOfGalaxy things
 // @author       Harrygiel
-// @include      *
+// @match        https://game274411.konggames.com/gamez/0027/4411/live/*
 // @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/js/init/INIT.js
 // @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/js/lib/BRILLIANDLIB.js
 // @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/js/core/BRILLIANDUPDATE.js
