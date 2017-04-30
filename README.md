@@ -3,6 +3,39 @@
 ## WARNING
 ### Generals warning
 A script is not something to take lightly. Some of them can easly integrate a keylogger. Be aware of the comments of others users, and check the code yourself if you are able to.
+An easy way to know if the script is dangerous or not is to read the install.user.js file.
+
+For example:
+```
+// @match        https://game274411.konggames.com/gamez/0027/4411/live/*
+```
+mean that the script will only be launched on konggames.com, on the game number 274411 (yeah, Heart of Galaxy, obviously).
+
+It can be a goo idea to look what the script need:
+```
+// @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/js/init/INIT.js
+// @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/js/lib/BRILLIANDLIB.js
+// @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/js/core/BRILLIANDUPDATE.js
+// @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/js/buttons/UPDATEAUTOROUTE.js
+// @resource	 updateAutoRouteIcon https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/img/updatehub.png
+```
+
+Last point, what permission does he want?
+```
+// @grant        GM_getResourceURL
+```
+Mean he want to get the ressources listed before.
+
+If you see
+```
+@match *
+```
+or
+
+```
+@include *
+```
+Watch out: this script will try to run everywhere. Be sure of what he do, and read why in the documentation.
 
 ### HeartOfGalaxyScript warning
 
