@@ -6,6 +6,7 @@
 // @author       Harrygiel
 // @include      *
 // @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/js/init/INIT.js
+// @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/js/lib/BRILLIANDLIB.js
 // @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/js/core/BRILLIANDUPDATE.js
 // @require      https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/js/buttons/UPDATEAUTOROUTE.js
 // @resource	 updateAutoRouteIcon https://rawgit.com/Harrygiel/HeartOfGalaxyScript/master/img/updatehub.png
