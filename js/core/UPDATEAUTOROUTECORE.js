@@ -5,28 +5,22 @@ function UpdateAutoRouteCore(){
     this.warningList = new Array();
     this.hasInfo = false;
     this.uARButton = new UpdateAutoRouteButton(this);
+    this.uARUIManager = new UpdateAutoRouteUIManager(this);
 }
 
 UpdateAutoRouteCore.prototype.UARButtonPressed = function(event){
-    /*
     console.log("Reseting old auto routes script states...")
     core = event.data.core;
+
+    console.log("Reseting old auto routes script states...")
     core.ResetState();
 
     console.log("Reset! Updating routes...");
     core.Update();
 
-    console.log("Updated! Printing routes states");
+    console.log("Updated! Displaying button states...");
     core.uARButton.SetColorState();
-    */
-    console.log("Reseting old auto routes script states...")
-    _this.core.ResetState();
-
-    console.log("Reset! Updating routes...");
-    _this.core.Update();
-
-    console.log("Updated! Printing routes states");
-    _this.core.uARButton.SetColorState();
+    console.log("Displayed!");
 }
 
 UpdateAutoRouteCore.prototype.ResetState = function(){
@@ -75,7 +69,7 @@ UpdateAutoRouteCore.prototype.Update = function(){
         var ratioOut = resOut.sum() / storage; if(ratioOut > 1) resOut = reduceResources(resOut, (ratioOut-1)*storage);
         if(Math.max(ratioIn, ratioOut) > 1) {
             var storageNeeded = (Math.max(ratioIn, ratioOut)-1)*storage;
-            console.log(fleet.name + " for "+ planets[routeFor].name +" needs "+storageNeeded+" more storage");
+            //console.log(fleet.name + " for "+ planets[routeFor].name +" needs "+storageNeeded+" more storage");
             _this.hasAlert = true;
             _this.alertList.push([planets[routeFor].name, storageNeeded]);
         }
@@ -83,4 +77,8 @@ UpdateAutoRouteCore.prototype.Update = function(){
         fleet.autoRes[b] = resIn;
         return route.fleet_name;
     });
+}
+
+UpdateAutoRouteCore.prototype.GetZB50Needed = function(storageNeeded){
+    return Math.floor(storageNeeded/5000000)+1;
 }

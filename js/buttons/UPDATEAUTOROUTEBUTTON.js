@@ -1,10 +1,9 @@
 function UpdateAutoRouteButton(core){
-    
-    var _this = this;
+
     this.core = core;
     this.AppendButton();
 
-    $("#autobuildhub_icon").click(this.core.UARButtonPressed);
+    $("#autobuildhub_icon").click({core: this.core}, this.core.UARButtonPressed);
 
     $("#autobuildhub_icon").hover(function() {
         (new m(120,
@@ -71,5 +70,4 @@ UpdateAutoRouteButton.prototype.SetColorState = function(){
         }, 1000);
 
     }
-    //mCSB_20_container
 }

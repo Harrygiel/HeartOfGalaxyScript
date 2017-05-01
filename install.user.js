@@ -27,4 +27,4 @@ var script;
 setTimeout(function(){
               console.log("[SCRIPT] Script loaded !");
               script = new Script();
-         }, 4000);
+         }, 1000);
