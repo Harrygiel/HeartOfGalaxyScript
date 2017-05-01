@@ -1,5 +1,9 @@
 ﻿#### Hearth Of Script ####
 
+---- V0.0.4 ----
+
+*Added game function library
+* Correcting the popup on the auto button.
 
 ---- V0.0.3 ----
 
