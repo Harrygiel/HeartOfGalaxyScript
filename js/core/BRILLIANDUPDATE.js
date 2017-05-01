@@ -32,7 +32,11 @@ script.UpdateAutoRoute = function(){
         var resOut = planetsTransportRes[routeFor].map(function(v, k) { if(fleet.autoRes[a] == 0) return 0; return v < 0 ? Math.ceil(-v * travelTime) : 0; });
         var ratioIn = resIn.sum() / storage; if(ratioIn > 1) resIn = reduceResources(resIn, (ratioIn-1)*storage);
         var ratioOut = resOut.sum() / storage; if(ratioOut > 1) resOut = reduceResources(resOut, (ratioOut-1)*storage);
-        if(Math.max(ratioIn, ratioOut) > 1) console.log(fleet.name+" needs "+(Math.max(ratioIn, ratioOut)-1)*storage+" more storage");
+        if(Math.max(ratioIn, ratioOut) > 1) {
+            console.log(fleet.name+" needs "+(Math.max(ratioIn, ratioOut)-1)*storage+" more storage");
+            updateAutoRouteButton.hasAlert = true;
+            console.dir(routeFor);
+        }
         fleet.autoRes[a] = resOut;
         fleet.autoRes[b] = resIn;
         return route.fleet_name;

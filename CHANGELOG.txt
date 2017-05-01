@@ -2,8 +2,10 @@
 
 ---- V0.0.4 ----
 
-*Added game function library
+* Added game function library
 * Correcting the popup on the auto button.
+* Adding color background on the Update AutoRoad button
+  in function of the alert state
 
 ---- V0.0.3 ----
 
