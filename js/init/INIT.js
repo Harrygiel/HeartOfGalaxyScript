@@ -1,15 +1,17 @@
-var script = new Object();
+var updateAutoRouteCore;
 
-script.init = function(){
+
+function Script(){
+
+	updateAutoRouteCore = new UpdateAutoRouteCore();
 	/*
 	console.log(game.id);
 	console.dir(planets);
 	console.dir(routes);
 	console.dir(fleetSchedule);
 	*/
+
 	console.log(document.title);
-	hub = planetsName.santorini;
-    planetsTransportRes = Array(planets.length);
-	
-	updateAutoRouteButton.init();
 }
+
+//

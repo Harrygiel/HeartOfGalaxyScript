@@ -1,5 +1,46 @@
-script.UpdateAutoRoute = function(){
+function UpdateAutoRouteCore(){
+    this.hasAlert = false;
+    this.alertList = new Array(); 
+    this.hasWarning = false;
+    this.warningList = new Array();
+    this.hasInfo = false;
+    this.uARButton = new UpdateAutoRouteButton(this);
+}
+
+UpdateAutoRouteCore.prototype.UARButtonPressed = function(event){
+    /*
+    console.log("Reseting old auto routes script states...")
+    core = event.data.core;
+    core.ResetState();
+
+    console.log("Reset! Updating routes...");
+    core.Update();
+
+    console.log("Updated! Printing routes states");
+    core.uARButton.SetColorState();
+    */
+    console.log("Reseting old auto routes script states...")
+    _this.core.ResetState();
+
+    console.log("Reset! Updating routes...");
+    _this.core.Update();
+
+    console.log("Updated! Printing routes states");
+    _this.core.uARButton.SetColorState();
+}
+
+UpdateAutoRouteCore.prototype.ResetState = function(){
+
+        this.hasAlert = false;
+        this.hasWarning = false;
+        this.hasInfo = false;
+        this.alertList.length = 0;
+        this.hasWarning.length = 0;
+}
+
+UpdateAutoRouteCore.prototype.Update = function(){
     
+    var _this = this;
     var hub = planetsName.santorini;
 
     var planetsTransportRes = Array(planets.length);
@@ -33,9 +74,10 @@ script.UpdateAutoRoute = function(){
         var ratioIn = resIn.sum() / storage; if(ratioIn > 1) resIn = reduceResources(resIn, (ratioIn-1)*storage);
         var ratioOut = resOut.sum() / storage; if(ratioOut > 1) resOut = reduceResources(resOut, (ratioOut-1)*storage);
         if(Math.max(ratioIn, ratioOut) > 1) {
-            console.log(fleet.name+" needs "+(Math.max(ratioIn, ratioOut)-1)*storage+" more storage");
-            updateAutoRouteButton.hasAlert = true;
-            console.dir(routeFor);
+            var storageNeeded = (Math.max(ratioIn, ratioOut)-1)*storage;
+            console.log(fleet.name + " for "+ planets[routeFor].name +" needs "+storageNeeded+" more storage");
+            _this.hasAlert = true;
+            _this.alertList.push([planets[routeFor].name, storageNeeded]);
         }
         fleet.autoRes[a] = resOut;
         fleet.autoRes[b] = resIn;
