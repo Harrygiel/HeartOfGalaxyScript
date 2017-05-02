@@ -1,18 +1,31 @@
 # HeartOfGalaxyScript
 
 [Features](https://github.com/Harrygiel/HeartOfGalaxyScript#features)
-[WARNING](https://github.com/Harrygiel/HeartOfGalaxyScript#warning)
-   [Generals warning](https://github.com/Harrygiel/HeartOfGalaxyScript#generals-warning)
-   [HeartOfGalaxyScript warning](https://github.com/Harrygiel/HeartOfGalaxyScript#heartofgalaxyscript-warning)
-[Getting Started](https://github.com/Harrygiel/HeartOfGalaxyScript#getting-started)
-   [Prerequisites](https://github.com/Harrygiel/HeartOfGalaxyScript#prerequisites)
-   [Installing the script](https://github.com/Harrygiel/HeartOfGalaxyScript#installing-the-script)
-   [Using the script](https://github.com/Harrygiel/HeartOfGalaxyScript#using-the-script)
-   [Updating the script](https://github.com/Harrygiel/HeartOfGalaxyScript#updating-the-script)
+
+[WARNING](https://github.com/Harrygiel/HeartOfGalaxyScript#warning) 
+
+----[Generals warning](https://github.com/Harrygiel/HeartOfGalaxyScript#generals-warning) 
+   
+----[HeartOfGalaxyScript warning](https://github.com/Harrygiel/HeartOfGalaxyScript#heartofgalaxyscript-warning) 
+   
+[Getting Started](https://github.com/Harrygiel/HeartOfGalaxyScript#getting-started) 
+
+----[Prerequisites](https://github.com/Harrygiel/HeartOfGalaxyScript#prerequisites) 
+   
+----[Installing the script](https://github.com/Harrygiel/HeartOfGalaxyScript#installing-the-script)
+   
+----[Using the script](https://github.com/Harrygiel/HeartOfGalaxyScript#using-the-script) 
+   
+----[Updating the script](https://github.com/Harrygiel/HeartOfGalaxyScript#updating-the-script)
+   
 [Questions](https://github.com/Harrygiel/HeartOfGalaxyScript#questions)
+
 [Changelog](https://github.com/Harrygiel/HeartOfGalaxyScript#changelog)
+
 [Authors](https://github.com/Harrygiel/HeartOfGalaxyScript#authors)
+
 [License](https://github.com/Harrygiel/HeartOfGalaxyScript#license)
+
 
 ## Features
 
