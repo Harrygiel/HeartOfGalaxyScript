@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         [DEV]HeartOfScript-Harrygiel
+// @name         HeartOfScript-Harrygiel
 // @namespace    https://github.com/Harrygiel/HeartOfGalaxyScript/tree/master
 // @version      0.1.0
 // @description  Automate HearthOfGalaxy things
