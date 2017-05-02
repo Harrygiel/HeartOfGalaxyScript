@@ -79,6 +79,6 @@ UpdateAutoRouteCore.prototype.Update = function(){
     });
 }
 
-UpdateAutoRouteCore.prototype.GetZB50Needed = function(storageNeeded){
+UpdateAutoRouteCore.prototype.GetZB50Needed = function(storageNeeded){ // SHOULD BE CALLED IN THE MANAGER
     return Math.floor(storageNeeded/5000000)+1;
 }
