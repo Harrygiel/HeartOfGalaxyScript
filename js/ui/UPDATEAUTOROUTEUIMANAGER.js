@@ -52,7 +52,7 @@ UpdateAutoRouteUIManager.prototype.UpdatePlanetUIAlertState = function(planetDiv
 		})
 		$(planetDiv).hover(function() {
         (new m(250,
-            20, "<span class='blue_text' style='width:100%;text-align:center'>" + Math.floor(storageNeeded/1000000) + "M more storage needed. Buy and add " + Math.floor(storageNeeded/5000000) + " more ZB50 to the road</span>", "info")).drawInfo();
+            20, "<span class='blue_text' style='width:100%;text-align:center'>  " + Math.floor(storageNeeded/1000000) + " M more storage needed. Buy and add " + (Math.floor(storageNeeded/5000000)+1) + " more ZB50 to the road</span>", "info")).drawInfo();
         $(document).on("mousemove", function(a) {
             mouseX = a.pageX;
             mouseY = a.pageY + 20;

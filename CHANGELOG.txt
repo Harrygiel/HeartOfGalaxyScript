@@ -1,5 +1,22 @@
 ﻿#### Hearth Of Script ####
 
+---- V0.1.0 ----
+
+* Correcting an error in the popup calculator
+* Cleaned useless file
+* Updated install.user.js
+* Updated Changelog
+* Updated README.md
+	warning summary added
+	feature added
+	"updating the script" added
+	Changelog added
+
+
+---- V0.0.5 ----
+
+* Adding info popup for planets with alerts
+
 ---- V0.0.4 ----
 
 * Reworked all classes. Now a core object create and call
@@ -8,6 +25,7 @@
 * Correcting the popup on the auto button.
 * Adding color background on the Update AutoRoad button
   in function of the alert state
+* Adding color background for planets with alerts
 
 ---- V0.0.3 ----
 

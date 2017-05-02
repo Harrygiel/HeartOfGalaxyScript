@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [DEV]HeartOfScript-Harrygiel
 // @namespace    https://github.com/Harrygiel/HeartOfGalaxyScript/tree/dev-Harrygiel
-// @version      0.0.5
+// @version      0.1.0
 // @description  Automate HearthOfGalaxy things
 // @author       Harrygiel
 // @match        https://game274411.konggames.com/gamez/0027/4411/live/*
