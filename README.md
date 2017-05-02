@@ -119,6 +119,7 @@ Finaly, in the tampermonkey parameter: Externals > Update Interval: Always: you 
 2) Optional: Sometime, Tampemonkey don't update the externals, even with the option activated. Go on the script pannel, go in the External tab, and purge every external manually.
 
 ## Questions
+
 ```
 Q: The script is not working !
 ```
@@ -147,6 +148,7 @@ A: Great ! Just ask around, I'm pretty sure some people have great idea. Why not
 ```
 Q: After an update, the script is not working anymore !
 ```
+
 A: First, in the tampermonkey parameter: Externals > Update Interval: Always: you don't want to update only 1/10 of the script, trust me.
 
 ## Changelog

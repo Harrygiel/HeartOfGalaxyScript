@@ -28,3 +28,8 @@ setTimeout(function(){
               console.log("[SCRIPT] Script loaded !");
               script = new Script();
          }, 1000);
+setTimeout(function(){ if(typeof game !== 'undefined' && typeof game.planets !== 'undefined'){
+                          console.log("[SCRIPT] Script loaded !");
+                          script.init();
+                          }
+                     }, 5000);
