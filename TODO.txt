@@ -1,0 +1,12 @@
+Activate the update manager if merge with autofleet is pressed.
+Activate update manager update button is presset in the fleet screen
+Correct the popup design
+
+Insert an option menu
+Insert hub option
+Autocorrect fleet
+Insert % rez left option per planet
+
+nanofarad:
+add a "ignore this planet for alert"
+add a "ignore this ressource for alert"

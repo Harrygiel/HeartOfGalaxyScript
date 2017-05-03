@@ -7,10 +7,26 @@ function UpdateAutoRouteUIManager(core){
     	if(_this.isPARDivListUpdated == false){
     		_this.isPARDivListUpdated = true;
     		setTimeout(function(){
-    			_this.planetARDivList = _this.GetPlanetARDivList();
+    			this.planetARDivList = this.GetPlanetARDivList();
     		}, 300);
     	}
-    	_this.SetPlanetARDivAlertState();
+    	this.click(this.SetPlanetARDivAlertState);
+    });
+
+    $("#mCSB_20_container").click(function(){
+    	if ($("#autoroutesov_0_button").length) {
+	    	this.find("li").each(function(){
+	  			this.click(this.SetPlanetARDivAlertState);
+	  		});
+	  		this.click(function(){});
+	    }
+    });
+
+    $("#mCSB_19_container").click(function(){
+    	if ($("#mergeauto_button").length) {
+	    	$("#mergeauto_button").click(this.SetPlanetARDivAlertState);
+	  		this.click(function(){});
+	    }
     });
 }
 

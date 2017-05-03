@@ -18,8 +18,9 @@ UpdateAutoRouteCore.prototype.UARButtonPressed = function(event){
     console.log("Reset! Updating routes...");
     core.Update();
 
-    console.log("Updated! Displaying button states...");
+    console.log("Updated! Displaying states...");
     core.uARButton.SetColorState();
+    if ($("#autoroutesov_0_button").length) { core.uARUIManager.SetPlanetARDivAlertState()};
     console.log("Displayed!");
 }
 

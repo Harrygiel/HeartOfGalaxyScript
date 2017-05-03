@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         HeartOfScript-Harrygiel
+// @name         [DEV]HeartOfScript-Harrygiel
 // @namespace    https://github.com/Harrygiel/HeartOfGalaxyScript/tree/dev-Harrygiel
 // @version      0.1.0
 // @description  Automate HearthOfGalaxy things
@@ -28,8 +28,3 @@ setTimeout(function(){
               console.log("[SCRIPT] Script loaded !");
               script = new Script();
          }, 1000);
-setTimeout(function(){ if(typeof game !== 'undefined' && typeof game.planets !== 'undefined'){
-                          console.log("[SCRIPT] Script loaded !");
-                          script.init();
-                          }
-                     }, 5000);
